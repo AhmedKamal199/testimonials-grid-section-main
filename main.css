@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&family=Big+Shoulders+Display:wght@800&family=Lexend+Deca&family=Neonderthaw&display=swap');
+body{
+    margin:0;
+    box-sizing: border-box;
+    height: 100vh;
+    font-size: 13px;
+    color: white;
+    font-family: 'Barlow Semi Condensed';
+    background-color:  hsl(210, 46%, 95%)
+}
+
+h2,h4{
+    font-weight: normal;
+}
+
+img{
+    width:20px;
+    height: 20px;
+    border-radius:50%;
+    border: 1px solid white;
+    margin: 20px 10px 0 0;
+}
+
+.grid{
+    display: grid;
+    grid-template-rows: repeat(12,1fr);
+    grid-template-columns: repeat(12,1fr);
+    height: 100%;
+    grid-gap:20px;
+}
+
+
+.item{
+    min-width: 200px;
+    min-height: 260px;
+    padding:15px;
+    border-radius:5px;
+}
+.profile{
+    display:flex;
+}
+
+.profile small{
+    opacity: 0.5;
+}
+
+.item p{
+    opacity: 0.7;
+}
+.up{
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+.down{
+    grid-row-start: 9;
+    min-height:220px;
+}
+
+.item1{
+    grid-column-start: 5;
+    grid-column-end: 7;
+    background-color:hsl(263, 55%, 52%);
+    width:485px;
+}
+
+.item2{
+    grid-column-start:7;
+    background-color:hsl(217, 19%, 35%);
+}
+
+.item3{
+    grid-column-start:8;
+    grid-row-end: 10;
+    background-color: white;
+    color:black;
+}
+
+.item4{
+    grid-column-start: 5;
+    background-color: white;
+    color:black;
+}
+
+.item5{
+    grid-column-start:6;
+    grid-column-end:8;
+    background-color: hsl(219, 29%, 14%);
+}
+
+@media screen and (max-width:375px){
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&family=Big+Shoulders+Display:wght@800&family=Lexend+Deca&family=Neonderthaw&display=swap');
+body{
+    margin:0;
+    box-sizing: border-box;
+    height: 100vh;
+    font-size: 13px;
+    color: white;
+    font-family: 'Barlow Semi Condensed';
+    background-color:  hsl(210, 46%, 95%)
+}
+
+h2,h4{
+    font-weight: normal;
+}
+
+img{
+    width:20px;
+    height: 20px;
+    border-radius:50%;
+    border: 1px solid white;
+    margin: 20px 10px 0 0;
+}
+
+.grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item1{
+    width: auto;
+}
+.item{
+    flex-basis: auto;
+    min-height: auto; 
+    padding:15px;
+    border-radius:5px;
+}
+
+.profile{
+    display:flex;
+}
+
+.profile small{
+    opacity: 0.5;
+}
+
+.item p{
+    opacity: 0.7;
+}
+
+}
